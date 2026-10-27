@@ -13,11 +13,12 @@
     <span>Word Rank</span>
   </a>
   <h1>Word data</h1>
-  <p class="meta">The word list used by French Word Rank</p>
+  <p class="meta">The word lists used by French Word Rank</p>
 
   <div class="card">
     <ul class="links">
       <li><a href="french-words.json" download>french-words.json<small>About 4 MB · 46,941 dictionary forms and 86,293 word forms</small></a></li>
+      <li><a href="french-meanings.json" download>french-meanings.json<small>About 2.4 MB · short English meanings for 38,412 words</small></a></li>
     </ul>
   </div>
 
@@ -25,6 +26,10 @@
   <p>The frequencies come from <a href="http://www.lexique.org">Lexique 3.83</a> by Boris New, Christophe Pallier and colleagues, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0</a>. This file is adapted from Lexique and is shared under the same licence: you may use, share and adapt it, including commercially, as long as you credit Lexique and share your adaptations under the same licence.</p>
   <p>New, B., Pallier, C., Brysbaert, M. and Ferrand, L. (2004). Lexique 2: A New French Lexical Database. <i>Behavior Research Methods, Instruments, &amp; Computers</i>, 36(3), 516–524.</p>
   <p>New, B., Brysbaert, M., Veronis, J. and Pallier, C. (2007). The use of film subtitles to estimate word frequencies. <i>Applied Psycholinguistics</i>, 28(4), 661–677.</p>
+
+  <h2>English meanings</h2>
+  <p>The meanings in <code>french-meanings.json</code> come from the <a href="https://en.wiktionary.org">English Wiktionary</a>, by Wiktionary contributors, as extracted by <a href="https://kaikki.org">Kaikki</a> (wiktextract), licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. For each word, up to three of the first senses for its two most common word classes were kept and shortened to about 70 characters; inflection-only senses ("plural of …") are used only when a word class has nothing else. Shared under the same licence.</p>
+  <p>Format: <code>{"word": [["word class", "meaning", …], …]}</code>.</p>
 
   <h2>What was changed</h2>
   <p>Lexique's entries were grouped by dictionary form (lemma), keeping the film-subtitle and book frequencies (occurrences per million words) for each word class. A table of inflected forms (verb forms, plurals, feminine forms) pointing to their dictionary forms was added so any form can be looked up.</p>
