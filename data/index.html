@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word data · Word Rank</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <a class="brand" href="../">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#18257a"/><rect x="16" y="16" width="8" height="33" rx="4" fill="#5b8cff"/><rect x="28" y="28" width="8" height="21" rx="4" fill="#fff"/><rect x="40" y="36" width="8" height="13" rx="4" fill="#ff4a5f"/></svg>
+    <span>Word Rank</span>
+  </a>
+  <h1>Word data</h1>
+  <p class="meta">The word list used by French Word Rank</p>
+
+  <div class="card">
+    <ul class="links">
+      <li><a href="french-words.json" download>french-words.json<small>About 4 MB · 46,941 dictionary forms and 86,293 word forms</small></a></li>
+    </ul>
+  </div>
+
+  <h2>Source and licence</h2>
+  <p>The frequencies come from <a href="http://www.lexique.org">Lexique 3.83</a> by Boris New, Christophe Pallier and colleagues, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0</a>. This file is adapted from Lexique and is shared under the same licence: you may use, share and adapt it, including commercially, as long as you credit Lexique and share your adaptations under the same licence.</p>
+  <p>New, B., Pallier, C., Brysbaert, M. and Ferrand, L. (2004). Lexique 2: A New French Lexical Database. <i>Behavior Research Methods, Instruments, &amp; Computers</i>, 36(3), 516–524.</p>
+  <p>New, B., Brysbaert, M., Veronis, J. and Pallier, C. (2007). The use of film subtitles to estimate word frequencies. <i>Applied Psycholinguistics</i>, 28(4), 661–677.</p>
+
+  <h2>What was changed</h2>
+  <p>Lexique's entries were grouped by dictionary form (lemma), keeping the film-subtitle and book frequencies (occurrences per million words) for each word class. A table of inflected forms (verb forms, plurals, feminine forms) pointing to their dictionary forms was added so any form can be looked up.</p>
+
+  <h2>Format</h2>
+  <p><code>L</code> is a list of dictionary forms: <code>[word, subtitles per million, books per million, [[word class, subtitles, books, gender], …]]</code>. <code>F</code> maps each inflected form to the positions in <code>L</code> of its dictionary forms.</p>
+
+  <footer>Word Rank · <a href="../support/">Support</a> · <a href="../privacy/">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
